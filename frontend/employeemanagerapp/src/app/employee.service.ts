@@ -9,7 +9,8 @@ import { environment } from '../environments/environment';
 
 @Injectable({providedIn: 'root'}) //this let knows the entire application know about the service
 export class EmployeeService {
-  private apiServerUrl = environment.apiBaseUrl;
+  private apiServerUrl = 'http://localhost:8080';
+  //environment.apiBaseUrl;
 
   constructor(private http: HttpClient){}
 
